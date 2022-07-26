@@ -1,0 +1,27 @@
+// CONTAINS ALL THE FLEX CONFIGURATION
+
+@mixin flex() {
+  display: flex;
+}
+
+@mixin flex-dir-col() {
+  @include flex;
+  flex-direction: column;
+}
+
+@mixin flex-justify($justify) {
+  @include flex;
+  justify-content: $justify;
+}
+
+@mixin flex-align($align) {
+  @include flex;
+  align-items: $align;
+}
+
+@mixin flex-full($justify, $align, $direction: row) {
+  @include flex;
+  @include flex-justify($justify);
+  @include flex-align($align);
+  flex-direction: $direction;
+}

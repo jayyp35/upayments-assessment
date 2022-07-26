@@ -6,3 +6,10 @@ export const setLoading = (payload) => {
         payload
     }
 }
+
+export const getProducts = (payload) => {
+    return {
+        type: CONSTANTS.GET_PRODUCTS,
+        payload
+    }
+}

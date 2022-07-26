@@ -1,0 +1,61 @@
+// IMPORT THE MAIN.SCSS IN YOUR STYLES TO USE ALL BELOW FILE CLASSES
+
+@import "./variables";
+@import "./fonts";
+@import "./flex";
+
+@mixin hide-scrollbar() {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@mixin input-noBorder {
+  &:focus {
+    border: none;
+    outline: none;
+  }
+  &:active {
+    border: none;
+    outline: none;
+  }
+}
+
+@mixin user-select-none {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@mixin text-ellipsis($numOfLines: 1) {
+  display: -webkit-box;
+  -webkit-line-clamp: $numOfLines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+@mixin long-word-break() {
+  display: table-cell;
+  vertical-align: middle;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+@keyframes fadeInMoveTop {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
