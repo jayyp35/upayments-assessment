@@ -1,0 +1,7 @@
+const CONSTANTS = {
+    SET_LOADING: "SET_LOADING",
+
+    SET_PRODUCTS: "SET_PRODUCTS"
+}
+
+export default CONSTANTS
