@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/upayments-assessment/static/css/main.7fc30f6f.css",
+    "main.js": "/upayments-assessment/static/js/main.a5f445c9.js",
+    "static/js/787.eb80bb70.chunk.js": "/upayments-assessment/static/js/787.eb80bb70.chunk.js",
+    "index.html": "/upayments-assessment/index.html",
+    "static/media/bottomAngleIcon.svg": "/upayments-assessment/static/media/bottomAngleIcon.a4bcf133ef7b72ceda9dc732855d9854.svg",
+    "main.7fc30f6f.css.map": "/upayments-assessment/static/css/main.7fc30f6f.css.map",
+    "main.a5f445c9.js.map": "/upayments-assessment/static/js/main.a5f445c9.js.map",
+    "787.eb80bb70.chunk.js.map": "/upayments-assessment/static/js/787.eb80bb70.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7fc30f6f.css",
+    "static/js/main.a5f445c9.js"
+  ]
+}
