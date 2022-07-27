@@ -6,13 +6,13 @@ export const API_ENDPOINTS = {
             url: () => BASE_URL + `/products/`
         },
         GET_PRODUCT: {
-            url: (params) => BASE_URL + `/products/${params.id}`
+            url: (payload) => BASE_URL + `/products/${payload.id}`
         },
         ADD_PRODUCT: {
             url: () => BASE_URL + `/products`
         },
         DELETE_PRODUCT: {
-            url: (params) => BASE_URL + `/products/${params.id}`
+            url: (payload) => BASE_URL + `/products/${payload.id}`
         },
     },
     CATEGORIES: {
@@ -20,7 +20,7 @@ export const API_ENDPOINTS = {
             url: () => BASE_URL + `/categories/`
         },
         GET_CATEGORY: {
-            url: (params) => BASE_URL + `/categories/${params.id}`
+            url: (payload) => BASE_URL + `/categories/${payload.id}`
         },
     }
 }

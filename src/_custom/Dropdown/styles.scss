@@ -5,11 +5,16 @@
   color: $color-text-black;
 }
 .Dropdown {
+  min-width: 150px;
+  max-width: 100%;
   margin: 8px 0;
+  position: relative;
+  cursor: pointer;
 
   &__Main {
     padding: 12px 16px;
     border: 1px solid $color-stroke-grey;
+    background-color: white;
     border-radius: 14px;
     position: relative;
     @include flex-align(center);
@@ -61,6 +66,12 @@
   }
 
   &__Extended {
+    cursor: pointer;
+    z-index: 10;
+    position: absolute;
+    left:0;
+    bottom:0;
+    transform: translateY(105%);
     overflow: auto;
     background: $color-pure-white;
     border: 1px solid #e9eef2;
@@ -77,13 +88,20 @@
 
     &--Show {
       // max-height: 150px;
+      width: 100%;
       display: block;
       transition: padding-top 0.3s linear, max-height 0.3s linear;
       padding-top: 8px;
       margin-top: 4px;
     }
     &__item {
+      width: 100%;
       padding: 8px 12px;
+      cursor: pointer;
+      &:hover {
+        background: rgb(240, 240, 240);
+      }
+
     }
   }
 }

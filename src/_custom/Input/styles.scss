@@ -26,11 +26,11 @@
     border: none;
     outline: none;
     resize: none;
-    font-family: Roboto;
+    // font-family: Roboto sans-serif;
     @include input-noBorder;
     &::placeholder {
       color: $color-text-grey;
-      font-family: Roboto;
+      // font-family: Roboto sans-serif;
     }
     user-select: text !important;
   }

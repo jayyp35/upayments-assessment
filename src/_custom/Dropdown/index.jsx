@@ -11,20 +11,14 @@ const Dropdown = ({
   itemClickHandler,
 }) => {
   const [showDetails, updateShowDetails] = useState(false);
-  const optionsRef = useRef();
 
   return (
     <React.Fragment>
       {!!label && <label className="dropdownLabel">{label}</label>}
       <div
-        ref={optionsRef}
         className={customClass ? `Dropdown ${customClass}` : "Dropdown"}
         {...customProps}
         onClick={() => {
-          optionsRef.current.scrollIntoView({
-            behavior: "smooth",
-            block: "start",
-          });
           updateShowDetails(!showDetails);
         }}
       >
